@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ducorre">
+    <title>DucorreCompany - Consulta de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>DucorreCompany - Sistema de Consulta</h1>
+        <div class="search-container">
+            <input type="text" id="cpf-search" placeholder="Digite o CPF para consulta">
+            <button type="button" class="btn-search">Consultar</button>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <section class="results-panel">
+            <div class="data-group dados-pessoais">
+                <h2>Dados Pessoais</h2>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <label>CPF:</label>
+                        <span class="data-value">000.000.000-00</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Nome:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Nome da Mãe:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Data de Nascimento:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Sexo:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Email:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-group situacao">
+                <h2>Situação</h2>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <label>Data do Óbito:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Status Receita Federal:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-group dados-profissionais">
+                <h2>Dados Profissionais</h2>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <label>Participação Societária:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>CBO:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Renda Presumida:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-group contato">
+                <h2>Contato</h2>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <label>Telefones:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-group endereco">
+                <h2>Endereço</h2>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <label>Tipo:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Logradouro:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Número:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Complemento:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Bairro:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Cidade:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Estado:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                    <div class="data-item">
+                        <label>CEP:</label>
+                        <span class="data-value">-</span>
+                    </div>
+                </div>
+                <div id="historico">
+                    <h3>Histórico de Pesquisas</h3>
+                    <ul id="historico-lista"></ul>
+                    <button id="limpar-historico">Limpar Histórico</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <aside class="actions-panel">
+            <h2>Ações</h2>
+            <button type="button" class="btn-action">Exportar PDF</button>
+            <button type="button" class="btn-action">Imprimir</button>
+            <button type="button" class="btn-action">Nova Consulta</button>
+        </aside>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2024 DucorreCompany - Sistema de Consulta de Dados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
